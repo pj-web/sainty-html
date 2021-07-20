@@ -1,0 +1,95 @@
+@media (max-width: 1692px) {
+    .container {
+        max-width: 1380px;
+    }
+
+    h2 {
+        font-size: 76px;
+    }
+
+    .header {
+        &__middle {
+            
+            margin-left: 1034px;
+        }
+    }
+
+
+    .music {
+
+        &__slider-heart, &__slider-you {
+            padding: 0;
+        }
+
+    }
+
+    .biography {
+
+        &__text {
+            padding-right: 100px;
+            h2 {
+                margin: 38px 0 20px;
+        }
+    }
+
+        &__text-line {
+            
+            margin: 10px 0 40px;
+        }
+
+        &__image-slider {
+
+            img {
+                
+            }
+
+            .slick-dots {
+                bottom: -10px;
+        }
+        
+    }
+
+    .buttons {
+
+        &__socials {
+            margin-right: 10px;
+        }
+
+        &__socials-item {
+            margin-right: 10px;
+        }
+
+        &__more {
+                a {
+                    padding: 20px 90px 20px 30px;
+                }
+            }
+        }
+    }
+    .contacts {
+        &__text {
+            padding-left: 100px;
+            justify-content: flex-start;
+            h2 {
+                margin-bottom: 0;
+
+                &::before {
+                    left: -140px;
+                }
+            }
+        }
+
+        &__image {
+            max-height: 920px;
+            img {
+                max-width: 980px;
+            }
+        }
+    }
+
+    .form {
+        input {
+            width: 250px;
+        }
+    }
+}

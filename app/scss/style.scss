@@ -200,7 +200,10 @@ h3 {
     &__header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: 65px;
+
+       
     }
 
     &__header-slash {
@@ -223,15 +226,25 @@ h3 {
 
     &__header-flipping {
         display: flex;
+        justify-content: space-between;
         font-size: 15px;
         line-height: 19px;
-        cursor: pointer;
+        
+        text-align: right;
 
-        p {
+        div {
+            margin-top: 25px;
+            cursor: pointer;
+        }
+
+        span {
             font-size: 15px;
             line-height: 19px;
             color: #fff;
             text-transform: uppercase;
+            padding-top: 20px;
+            padding-left: 240px;
+            
         }
     }
 
@@ -275,8 +288,35 @@ h3 {
     }
 
     &__slider-item {
-        width: 1197px;
-        height: 673px;
+        width: 100%;
+        padding-top: 56.25%;
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+           
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__slider-you {
@@ -303,7 +343,7 @@ h3 {
 .biography {
 
     &__inner {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
 
     &__columns {
@@ -313,7 +353,17 @@ h3 {
     &__text {
 
         h2 {
-            margin-bottom: 65px;
+            margin: 38px 0 65px;
+            position: relative;
+
+            &::after {
+                content: "///";
+                position: absolute;
+                font-weight: 100;
+                color: #fff;
+                padding-left: 22px;
+                
+            }
         }
 
         padding-right: 146px;
@@ -436,11 +486,210 @@ h3 {
     }
 
     &__socials-item {
+        margin-right: 26px;
+    }
+
+    &__socials-item:nth-child(5) {
+        padding-top: 4px;
     }
 
     &__more {
+
+        a {
+            font-size: 17px;
+            line-height: 20px;
+            border: 1px solid #fff;
+            padding: 20px 100px 20px 40px;
+            position: relative;
+
+            &:hover {
+                text-decoration: none;
+                font-weight: 400;
+                background-color: #fff;
+                color: #284B6E;
+                position: relative;
+                transition: 0.6s ease 0s;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background: url('../images/arrow-right-blue.svg');
+                    width: 35px;
+                    height: 9px;
+                    top: 25px;
+                    left: 180px;    
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: url('../images/arrow-right.svg');
+                width: 35px;
+                height: 9px;
+                top: 25px;
+                left: 180px;
+            }
+        }
     }
 }
+
+.contacts {
+    
+    overflow: hidden;
+    padding-bottom: 88px;
+
+    &__inner {
+    }
+
+    &__columns {
+        display: flex;
+    }
+
+    &__image {
+        width: 66%;
+        max-height: 1320px;
+
+        img {
+            
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 100px;
+        margin-left: 60px;
+
+        h2 {
+            position: relative;
+            margin-bottom: 320px;
+            &::before {
+                content: "///";
+                position: absolute;
+                font-size: 101px;
+                line-height: 123px;
+                color: #fff;
+                font-weight: 100;
+                left: -260px;
+
+                
+            }
+        }
+    }
+
+    &__management {
+        font-size: 25px;
+        line-height: 50px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__line {
+        background-color: #fff;
+        height: 2px;
+        margin-bottom: 21px;
+        max-width: 376px;
+    }
+
+    &__name {
+        margin-bottom: 124px;
+        font-size: 25px;
+        line-height: 50px;
+        
+
+        a {
+            color: #000;
+
+            &:hover {
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__form {
+        margin-bottom: 120px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 37px;
+    }
+
+    &__footer-corywright {
+    }
+
+    &__footer-policy {
+        a {
+            font-size: 12px;
+            line-height: 20px;
+            text-transform: inherit;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    &__socials-item:nth-child(5) {
+        padding-top: 10px;
+    }
+}
+
+.form {
+
+    &__body {
+    }
+
+    &__title {
+        font-size: 25px;
+        line-height: 25px;
+        color: #4F6C87;
+        text-transform: inherit;
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        background: transparent;
+        border: 1px solid #fff;
+        height: 66px;
+        width: 390px;
+        font-size: 25px;
+        line-height: 25px;
+        padding-left: 30px;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    button {
+        background: transparent;
+        border: 1px solid #fff;
+        height: 66px;
+        width: 212px;
+        font-size: 25px;
+        line-height: 25px;
+        color: #fff;
+        transition: all 0.6s ease 0s;
+
+        &:hover {
+            
+            background-color: #fff;
+            color: #284B6E;
+        }
+
+    }
+}
+
+
 
 
 

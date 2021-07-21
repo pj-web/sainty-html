@@ -1,24 +1,133 @@
 @media (max-width: 1399px) {
     .container {
-        max-width: 1160px;
+        max-width: 1140px;
     }
 
     .header {
         &__middle {
             
-            margin-left: 860px;
+            margin-left: 800px;
         }
     }
 
     .music {
+
+        &__container {
+            padding-top: 120px;
+            
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
         &__slider-heart, &__slider-you {
             display: none;
         }
 
         &__slider-item {
-            margin: 0 80px;
+            // margin: 0 80px;
+        }
+
+        &__slider-slider {
+            // text-align: center;
+    
+            .slick-list {
+                max-width: 1140px;
+                // margin: 0 auto;
+            }
         }
 
     }
+
+    .biography {
+
+        &__inner {
+            h2 {
+                top: 50px;
+            }
+        }
+
+        &__columns {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__image-text {
+            left: 200px;
+        }
+
+        &__image-slider {
+            text-align: center;
+        }
+
+        &__text {
+            width: 100%;
+            padding-top: 60px;
+            padding-right: 0px;
+        }
+
+        .buttons {
+            &__socials-item {
+                margin-right: 40px;
+            }
+        }
+        
+    }
+
+    .contacts {
+        &__text {
+            padding-left: 60px;
+            position: relative;
+
+            h2::before {
+                left: -100px;
+            }
+
+        }
+
+        &__management {
+            margin-bottom: 10px;
+        }
+
+        &__form {
+            position: absolute;
+            bottom: 30px;
+            left: -340px;
+        }
+
+        &__footer {
+            position: absolute;
+            bottom: 30px;
+            left: -280px;
+        }
+
+        &__footer-corywright {
+            margin: 0 20px;
+        }
+
+        &__footer-policy {
+            margin: 0 20px;
+        }
+
+
+        &__socials {
+            position: absolute;
+            bottom: -35px;
+            right: 230px;
+        }
+
+        &__socials-item {
+            margin: 0 20px;
+        }
+
+
+    }
+  
 }

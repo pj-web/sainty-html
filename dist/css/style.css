@@ -242,7 +242,19 @@ h3 {
   margin: 100px 0 64px;
 }
 
-.music h2::after {
+.music__container {
+  position: relative;
+}
+
+.music__container h2 {
+  font-size: 101px;
+  line-height: 101px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.music__container h2::after {
   content: "///";
   position: absolute;
   font-weight: 100;
@@ -250,17 +262,13 @@ h3 {
   padding-left: 130px;
 }
 
-.music__inner {
-  padding-bottom: 130px;
-}
-
 .music__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -272,6 +280,10 @@ h3 {
   line-height: 123px;
   font-weight: 100;
   color: #fff;
+}
+
+.music__header-track {
+  padding-top: 14px;
 }
 
 .music__header-name {
@@ -398,7 +410,7 @@ h3 {
 
 .video {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: 0;
   padding-bottom: 56.25%;
   background-color: #000000;
@@ -461,6 +473,7 @@ h3 {
 
 .video--enabled {
   cursor: pointer;
+  max-width: 100%;
 }
 
 .video--enabled .video__button {
@@ -469,6 +482,23 @@ h3 {
 
 .biography__inner {
   padding-bottom: 40px;
+  position: relative;
+}
+
+.biography__inner h2 {
+  position: absolute;
+  margin: 38px 0 65px;
+  position: relative;
+  top: 225px;
+  left: 0;
+}
+
+.biography__inner h2::after {
+  content: "///";
+  position: absolute;
+  font-weight: 100;
+  color: #fff;
+  padding-left: 22px;
 }
 
 .biography__columns {
@@ -478,20 +508,9 @@ h3 {
 }
 
 .biography__text {
+  width: 50%;
+  padding-top: 170px;
   padding-right: 146px;
-}
-
-.biography__text h2 {
-  margin: 38px 0 65px;
-  position: relative;
-}
-
-.biography__text h2::after {
-  content: "///";
-  position: absolute;
-  font-weight: 100;
-  color: #fff;
-  padding-left: 22px;
 }
 
 .biography__text p {
@@ -507,6 +526,7 @@ h3 {
 }
 
 .biography__image {
+  width: 50%;
   min-width: 0;
   position: relative;
 }
@@ -540,7 +560,7 @@ h3 {
 
 .biography__image-slider .slick-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: -30px;
   list-style: none;
   display: block;
   text-align: center;
@@ -712,8 +732,6 @@ h3 {
 .contacts__text h2::before {
   content: "///";
   position: absolute;
-  font-size: 101px;
-  line-height: 123px;
   color: #fff;
   font-weight: 100;
   left: -260px;
@@ -852,12 +870,21 @@ h3 {
     margin-left: 1034px;
   }
 
+  .music__container h2 {
+    font-size: 76px;
+  }
+
   .music__slider-heart,
   .music__slider-you {
     padding: 0;
   }
 
+  .biography__inner {
+    padding-bottom: 0;
+  }
+
   .biography__text {
+    width: 45%;
     padding-right: 100px;
   }
 
@@ -869,8 +896,12 @@ h3 {
     margin: 10px 0 40px;
   }
 
+  .biography__image {
+    width: 55%;
+  }
+
   .biography__image-slider .slick-dots {
-    bottom: -10px;
+    bottom: -40px;
   }
 
   .biography .buttons__socials {
@@ -909,17 +940,38 @@ h3 {
   }
 
   .form input {
-    width: 250px;
+    width: 310px;
+  }
+
+  .form button {
+    width: 180px;
   }
 }
 
 @media (max-width: 1399px) {
   .container {
-    max-width: 1160px;
+    max-width: 1140px;
   }
 
   .header__middle {
-    margin-left: 860px;
+    margin-left: 800px;
+  }
+
+  .music__container {
+    padding-top: 120px;
+  }
+
+  .music__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .music__slider-heart,
@@ -927,7 +979,156 @@ h3 {
     display: none;
   }
 
-  .music__slider-item {
-    margin: 0 80px;
+  .music__slider-slider .slick-list {
+    max-width: 1140px;
+  }
+
+  .biography__inner h2 {
+    top: 50px;
+  }
+
+  .biography__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .biography__image {
+    width: 100%;
+  }
+
+  .biography__image-text {
+    left: 200px;
+  }
+
+  .biography__image-slider {
+    text-align: center;
+  }
+
+  .biography__text {
+    width: 100%;
+    padding-top: 60px;
+    padding-right: 0px;
+  }
+
+  .biography .buttons__socials-item {
+    margin-right: 40px;
+  }
+
+  .contacts__text {
+    padding-left: 60px;
+    position: relative;
+  }
+
+  .contacts__text h2::before {
+    left: -100px;
+  }
+
+  .contacts__management {
+    margin-bottom: 10px;
+  }
+
+  .contacts__form {
+    position: absolute;
+    bottom: 30px;
+    left: -340px;
+  }
+
+  .contacts__footer {
+    position: absolute;
+    bottom: 30px;
+    left: -280px;
+  }
+
+  .contacts__footer-corywright {
+    margin: 0 20px;
+  }
+
+  .contacts__footer-policy {
+    margin: 0 20px;
+  }
+
+  .contacts__socials {
+    position: absolute;
+    bottom: -35px;
+    right: 230px;
+  }
+
+  .contacts__socials-item {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  h2::before,
+  h2::after {
+    display: none;
+  }
+
+  .container {
+    max-width: 860px;
+  }
+
+  .header__middle {
+    margin-left: 525px;
+  }
+
+  .music__slider-slider .slick-list {
+    max-width: 860px;
+  }
+
+  .biography__image-text {
+    left: 77px;
+  }
+
+  .contacts__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .contacts__image {
+    width: 100%;
+    max-height: 1200px;
+  }
+
+  .contacts__text {
+    padding: 0;
+    width: 100%;
+    position: relative;
+    margin-bottom: -120px;
+  }
+
+  .contacts__name {
+    margin-bottom: 40px;
+  }
+
+  .contacts__form {
+    position: static;
+  }
+
+  .contacts__footer {
+    position: static;
+    position: absolute;
+    bottom: -1030px;
+    left: 210px;
+  }
+
+  .contacts__socials {
+    position: absolute;
+    bottom: -1100px;
+    left: 80px;
+  }
+
+  .form input {
+    width: 400px;
   }
 }

@@ -17,6 +17,12 @@
 
     .music {
 
+        &__container {
+            h2 {
+                font-size: 76px;
+            }
+        }
+
         &__slider-heart, &__slider-you {
             padding: 0;
         }
@@ -25,7 +31,13 @@
 
     .biography {
 
+        &__inner {
+            padding-bottom: 0;
+        }
+
         &__text {
+
+            width: 45%;
             padding-right: 100px;
             h2 {
                 margin: 38px 0 20px;
@@ -37,6 +49,10 @@
             margin: 10px 0 40px;
         }
 
+        &__image {
+            width: 55%;
+        }
+
         &__image-slider {
 
             img {
@@ -44,7 +60,7 @@
             }
 
             .slick-dots {
-                bottom: -10px;
+                bottom: -40px;
         }
         
     }
@@ -89,7 +105,11 @@
 
     .form {
         input {
-            width: 250px;
+            width: 310px;
+        }
+
+        button {
+            width: 180px;
         }
     }
 }

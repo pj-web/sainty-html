@@ -1,19 +1,4 @@
-// window.addEventListener('DOMContentLoaded', function () {
-//     let videos = document.querySelectorAll('.music__slider-item');
 
-//     videos.forEach(function(video) {
-//         video.addEventListener('click', function() {
-//             video.classList.add('ready');
-//             if (video.classList.contains('ready')) {
-//                 return;
-//             }
-
-//             let src = video.dataset.src;
-
-//             video.insertAdjacentHTML('afterbegin', '<iframe src="' + src + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-//         });
-//     });
-// });
 
 function findVideos() {
     let videos = document.querySelectorAll('.video');
@@ -67,6 +52,22 @@ function generateURL(id) {
 }
 
 findVideos();
+
+function readMore() {
+    const dots = document.getElementById('dots');
+    const more = document.getElementById('more');
+    const btn = document.querySelectorAll('btn');
+
+    if(dots.style.display === "none") {
+        dots.style.display="inline";
+        btn.innerHTML="Подробнее";
+        more.style.display="none";
+    } else {
+        dots.style.display="none";
+        btn.innerHTML="Скрыть";
+        more.style.display="inline";
+    }
+}
 
 jQuery(function() {
     if ($('.music__slider-slider').length) {

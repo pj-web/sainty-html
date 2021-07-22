@@ -1,0 +1,25 @@
+@media (max-width: 380px) {
+    .music {
+        &__slider-slider {
+    
+            .slick-list {
+                max-width: 320px;
+            }
+        }
+    }
+    .biography {
+        &__image {
+            img {
+                max-width: 310px;
+            }
+        }
+    }
+    .contacts {
+        &__footer-policy {
+            left: 0px;
+        }
+        &__socials {
+            margin-left: 0px;
+        }
+    }
+}

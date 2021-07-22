@@ -1,0 +1,39 @@
+@media (max-width: 359px) {
+    .music {
+        &__slider-slider {
+    
+            .slick-list {
+                max-width: 300px;
+            }
+        }
+    }
+    .biography {
+        &__image {
+            img {
+                max-width: 280px;
+            }
+        }
+    }
+    .contacts {
+        background-position: 50% 660px;
+
+        &__line {
+            width: 280px;
+        }
+
+        &__footer {
+            padding-top: 470px;
+            // margin-bottom: 10px;
+        }
+        &__footer-policy {
+            bottom: -94px;
+            left: -24px;
+        }
+        &__socials {
+            margin-bottom: 60px;
+        }
+        &__socials-item {
+            margin: 0 8px;
+        }
+    }
+}

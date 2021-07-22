@@ -7,6 +7,13 @@
 }
 @font-face {
     font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-ThinItalic.woff2"), url("../fonts/Montserrat-ThinItalic.woff");
+    font-weight: 100;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
     src: url("../fonts/Montserrat-Regular.woff2"), url("../fonts/Montserrat-Regular.woff");
     font-weight: 400;
     font-display: swap;
@@ -98,30 +105,23 @@ h3 {
 }
 
 .wrapper {
-    // background: url('../images/bg.jpg') 50%/cover no-repeat;
-    // background-repeat: no-repeat;
-    // background-position: 0 0;
-    // background-size: 100% auto;
-    // background-size: cover;
-
-    // width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 .container {
     max-width: 1660px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .header {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // z-index: 10;
 
     &__inner {
         min-height: 220px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -131,8 +131,8 @@ h3 {
 
     &__middle {
         display: flex;
-        margin-left: 1320px;
-
+        justify-content: flex-end;
+        flex-grow: 1;
         
     }
 
@@ -177,7 +177,7 @@ h3 {
     }
 
     &__socials {
-        margin-top: 100px;
+        padding-top: 64px;
         
         
     }
@@ -201,8 +201,10 @@ h3 {
 }
 
 .music {
+    padding-top: 60px;
 
     &__container {
+        
         position: relative;
 
         h2 {
@@ -210,7 +212,7 @@ h3 {
             line-height: 101px;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 36;
             &::after {
                 content: "///";
                 position: absolute;
@@ -283,6 +285,7 @@ h3 {
     }
 
     &__slider {
+        padding-top: 30px;
         display: flex;
         min-width: 0;
         justify-content: space-between;
@@ -468,7 +471,7 @@ h3 {
                 position: absolute;
                 font-weight: 100;
                 color: #fff;
-                padding-left: 22px;
+                padding-left: 4px;
                 
             }
         }
@@ -479,11 +482,18 @@ h3 {
     }
 
     &__text {
+        #dots {
+            display: none;
+        }
+        #btn {
+            display: none;
+        }
+        #more {
+            display: inline-block;
+        }
         width: 50%;
-
-        
         padding-top: 170px;
-        padding-right: 146px;
+        padding-right: 130px;
 
         p {
             font-size: 14px;
@@ -536,7 +546,7 @@ h3 {
 
         .slick-dots {
             position: absolute;
-            bottom: -30px;
+            bottom: 10px;
             list-style: none;
             display: block;
             text-align: center;
@@ -685,7 +695,7 @@ h3 {
         justify-content: space-between;
         padding-top: 100px;
         padding-left: 140px;
-        // margin-left: 160px;
+        margin-left: 60px;
         width: 44%;
 
         h2 {
@@ -714,7 +724,7 @@ h3 {
         background-color: #fff;
         height: 2px;
         margin-bottom: 21px;
-        max-width: 376px;
+        width: 376px;
     }
 
     &__name {
@@ -784,7 +794,7 @@ h3 {
         background: transparent;
         border: 1px solid #fff;
         height: 66px;
-        width: 360px;
+        max-width: 60%;
         font-size: 25px;
         line-height: 25px;
         padding-left: 30px;
@@ -817,6 +827,10 @@ h3 {
 @import "_1399";
 @import "_1199";
 @import "_991";
+@import "_767";
+@import "_575";
+@import "_380";
+@import "_359";
 
 
 

@@ -1,12 +1,19 @@
 @media (max-width: 991.98px) { 
+    
+    .wrapper {
+        // background-image: none;
+        // background-image: url('../images/bg-998.jpg');
+        // background-repeat: no-repeat;
+        // background-position: 50% 50%;
+        // background-size: cover;
+    }
+    
     .container {
-        max-width: 740px;
+        // max-width: 740px;
     }
 
     .header {
-        &__middle {
-            margin-left: 400px;
-        }
+       
     }
 
     .music {
@@ -19,24 +26,18 @@
     }
 
     .contacts {
-        padding: 0;
-        &__image {
-            max-height: 1100px;
-            img {
-                width: 100%;
-            }
-        }
+        background-image: url('../images/contacts-790.png');
+        background-position: 50% 500px;
+        min-height: 1600px;
+       
 
         &__footer {
-            position: absolute;
-            bottom: -830px;
-            left: 176px;
+            padding-top: 740px;
+            
         }
 
         &__socials {
-            position: absolute;
-            bottom: -900px;
-            left: 50px;
+            
         }
     }
  }

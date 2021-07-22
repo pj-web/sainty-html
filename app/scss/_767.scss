@@ -1,0 +1,107 @@
+@media (max-width: 780px) { 
+
+    h2 {
+        font-size: 54px;
+    }
+
+    .container {
+        
+    }
+
+    .header {
+        &__inner {
+            min-height: 160px;
+        }
+        &__middle {
+            bottom: 65px;
+            
+        }
+    }
+
+    .hero {
+        &__socials {
+            margin: 0;
+        }
+
+        &__socials-item {
+            margin-bottom: 16px;
+        }
+    }
+
+    .music {
+
+        &__container {
+            padding-top: 0px;
+            h2 {
+                font-size: 54px;
+                left: 40px;
+
+                &::after {
+                    padding-left: 56px;
+                }
+            }
+           
+        }
+
+        &__header-flipping {
+            span {
+                padding-left: 130px;
+            }
+        }
+        
+
+        &__slider-slider {
+    
+            .slick-list {
+                max-width: 600px;
+            }
+        }
+    }
+
+    .biography {
+
+        &__inner {
+            h2 {
+                margin-top: 0;
+            }
+        }
+        &__image {
+            
+            img {
+                max-width: 500px;
+            }
+        }
+
+        &__image-text {
+            font-size: 54px;
+            top: 10px;
+            left: 110px;
+        }
+    }
+
+    .buttons {
+        &__socials {
+            display: none;
+        }
+    }
+    .contacts {
+        &__text {
+            h2 {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &__socials-item {
+            margin: 0 12px;
+            img {
+                max-width: 33px;
+            }
+        }
+
+        &__socials-item:nth-child(5) {
+            padding-top: 5px;
+        }
+    }
+ }

@@ -2,17 +2,24 @@
 
 
     .container {
-        max-width: 860px;
+        // max-width: 860px;
     }
 
     .header {
-        &__middle {
-            
-            margin-left: 525px;
+        &__inner {
+            min-height: 160px;
+        }
+       
+    }
+
+    .hero {
+        &__links {
+            margin: 60px 0 0px;
         }
     }
 
     .music {
+       
         &__slider-slider {
             // width: 900px;
 
@@ -27,8 +34,16 @@
     }
 
     .biography {
+        &__inner {
+            h2 {
+                margin-top: 0;
+                &::after {
+                    padding-left: 40px;
+                }
+            }
+        }
         &__image-text {
-            left: 77px;
+            left: 150px;
         }
     }
 
@@ -51,8 +66,8 @@
         &__text {
             padding: 0;
             width: 100%;
-            position: relative;
-            margin-bottom: -120px;
+            // position: relative;
+            // margin-bottom: -120px;
         }
 
         &__name {
@@ -66,23 +81,26 @@
         }
 
         &__footer {
-            position: absolute;
-            bottom: -1030px;
-            left: 210px;
+            position: static;
+            // position: absolute;
+            // bottom: -1030px;
+            // left: 210px;
         }
 
         &__socials {
-            position: absolute;
-            bottom: -1100px;
-            left: 80px;
+            position: static;
+            // position: absolute;
+            // bottom: -1100px;
+            // left: 80px;
         }
 
       
     }
 
     .form {
+        text-align: center;
         input {
-            width: 400px;
+            
         }
     }
 }

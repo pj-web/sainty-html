@@ -1,0 +1,270 @@
+@media (max-width: 575.98px) {
+
+    a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    h3 {
+        font-size: 23px;
+        line-height: 28px;
+        padding-top: 10px;
+    }
+
+    .wrapper {
+        background-image: url(../images/mobile-bg.jpg);
+        background-position: 50% 0px;
+    } 
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        &__inner {
+            min-height: 68px;
+        }
+        &__middle {
+            display: none;
+        }
+    }
+
+    .hero {
+        padding-top: 3%;
+        &__socials {
+            padding: 0;
+        }
+        &__socials-item {
+            margin-bottom: 5px;
+            font-size: 11px;
+            line-height: 14px;
+            img {
+                max-width: 20px;
+            }
+
+           
+        }
+        &__socials-item:nth-child(5) {
+            padding-top: 5px;
+        }
+        &__links {
+            margin: 28px 0 20px;
+        }
+    }
+
+    .music {
+        padding-top: 0;
+
+        &__container {
+            h2 {
+                font-size: 30px;
+                line-height: 37px;
+                position: static;
+            }
+        }
+        &__header {
+            margin: 0;
+        }
+        &__header-track {
+            padding: 0;
+        }
+        &__header-name {
+            font-size: 7px;
+            line-height: 9px;
+            text-align: center;
+        }
+        &__header-flipping {
+            span {
+                font-size: 5px;
+                line-height: 6px;
+                color: #5C7790;
+                padding-top: 4px;
+                padding-left: 66px;
+                margin: 0 60px;
+            }
+            div {
+                margin-top: 3px;
+            }
+        }
+        &__slider {
+            padding-top: 10px;
+        }
+        &__slider-slider {
+    
+            .slick-list {
+                max-width: 370px;
+            }
+        }
+    }
+
+    .biography {
+        &__inner {
+            h2 {
+                margin-bottom: 54px;
+            }
+        }
+        &__image {
+            img {
+                max-width: 356px;
+            }
+        }
+        &__text {
+            #more {
+                display: none;
+            }
+            #btn {
+                display: inline-block;
+            }
+            #dots {
+                display: inline-block;
+                
+            }
+            &-more {
+                display: inline-block;
+                padding: 10px 0 10px;
+                background: transparent;
+                text-decoration: underline;
+            }
+            p {
+                padding-bottom: 0;
+            }
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+        &__text-line {
+            order: 9;
+            height: 1px;
+            margin: 20px 0 20px;
+        }
+        &__image-slider {
+            .slick-dots {
+                display: none !important;
+            }
+        }
+        &__image-text {
+            font-size: 37px;
+            line-height: 45px;
+            left: 20px;
+        }
+
+        .buttons {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            &__more {
+                a {
+                    padding: 15px 90px 15px 30px;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    &::after {
+                        top: 18px;
+                        left: 140px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .form {
+        input {
+            height: 44px;
+            max-width: 199px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        button {
+            height: 44px;
+            max-width: 118px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+    }
+
+    
+
+    .contacts {
+        background-image: url('../images/contacts-mobile.png');
+        background-position: 50% 420px;
+        min-height: 1100px;
+
+        &__text {
+            align-items:flex-start;
+            justify-content:flex-start;
+            position: relative;
+            
+            p {
+                font-size: 20px;
+                line-height: 50px;
+            }
+
+            &::before {
+                content: "SAINTY";
+                position: absolute;
+                font-size: 128px;
+                line-height: 156px;
+                color: #fff;
+                font-weight: 100;
+                font-style: italic;
+                opacity: 44%;
+                top: 0;
+                left: 20px;
+                z-index: 0;
+            }
+        }
+        &__management {
+            z-index: 1;
+        }
+        &__name {
+            font-size: 25px;
+            line-height: 50px;
+            margin-bottom: 10px;
+
+            a {
+                font-size: 25px;
+                line-height: 50px;
+            }
+        }
+
+        &__line {
+            width: 322px;
+
+        }
+        
+
+        &__footer {
+            padding-top: 420px;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+        &__footer-corywright {
+            display: none;
+        }
+        &__footer-policy {
+            margin: 0;
+            width: 340px;
+            position: absolute;
+            bottom: -100px;
+            left: 20px;
+        }
+        &__socials {
+            margin-left: 20px;
+        }
+    }
+
+    form {
+        &__title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+ }

@@ -1,13 +1,15 @@
 @media (max-width: 1399.98px) {
+    
+    .wrapper {
+            }
+    
     .container {
-        max-width: 1140px;
+        
+
     }
 
     .header {
-        &__middle {
-            
-            margin-left: 800px;
-        }
+       
     }
 
     .music {
@@ -15,6 +17,9 @@
         &__container {
             padding-top: 120px;
             
+            h2 {
+                position: static;
+            }
         }
 
         &__inner {
@@ -82,9 +87,21 @@
     }
 
     .contacts {
+        padding: 0;
+        background-image: url('../images/contacts-1373.png');
+        background-repeat: no-repeat;
+        background-position: 50% 440px;
+        min-height: 2000px;
+        
+        &__inner {
+
+        }
         &__text {
-            padding-left: 60px;
-            position: relative;
+            width: 100%;
+            padding: 0px;
+            margin: 0;
+            align-items: center;
+            
 
             h2::before {
                 left: -100px;
@@ -92,20 +109,26 @@
 
         }
 
+        &__image {
+            display: none;
+        }
+
         &__management {
             margin-bottom: 10px;
         }
 
+        &__name {
+            margin-bottom: 40px;
+        }
+
         &__form {
-            position: absolute;
-            bottom: 30px;
-            left: -340px;
+            
+            
         }
 
         &__footer {
-            position: absolute;
-            bottom: 30px;
-            left: -280px;
+            padding-top: 1040px;
+            
         }
 
         &__footer-corywright {
@@ -118,9 +141,7 @@
 
 
         &__socials {
-            position: absolute;
-            bottom: -35px;
-            right: 230px;
+           
         }
 
         &__socials-item {

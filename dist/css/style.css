@@ -10,6 +10,14 @@
 
 @font-face {
   font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-ThinItalic.woff2"), url("../fonts/Montserrat-ThinItalic.woff");
+  font-weight: 100;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.woff2"), url("../fonts/Montserrat-Regular.woff");
   font-weight: 400;
   font-display: swap;
@@ -162,9 +170,17 @@ h3 {
   text-transform: uppercase;
 }
 
+.wrapper {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 .container {
   max-width: 1660px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .header__inner {
@@ -172,9 +188,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -184,7 +200,12 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 1320px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .header__lang {
@@ -225,7 +246,7 @@ h3 {
 }
 
 .hero__socials {
-  margin-top: 100px;
+  padding-top: 64px;
 }
 
 .hero__socials-item {
@@ -242,6 +263,10 @@ h3 {
   margin: 100px 0 64px;
 }
 
+.music {
+  padding-top: 60px;
+}
+
 .music__container {
   position: relative;
 }
@@ -251,7 +276,7 @@ h3 {
   line-height: 101px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 36;
 }
 
 .music__container h2::after {
@@ -321,6 +346,7 @@ h3 {
 }
 
 .music__slider {
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +524,7 @@ h3 {
   position: absolute;
   font-weight: 100;
   color: #fff;
-  padding-left: 22px;
+  padding-left: 4px;
 }
 
 .biography__columns {
@@ -510,7 +536,19 @@ h3 {
 .biography__text {
   width: 50%;
   padding-top: 170px;
-  padding-right: 146px;
+  padding-right: 130px;
+}
+
+.biography__text #dots {
+  display: none;
+}
+
+.biography__text #btn {
+  display: none;
+}
+
+.biography__text #more {
+  display: inline-block;
 }
 
 .biography__text p {
@@ -560,7 +598,7 @@ h3 {
 
 .biography__image-slider .slick-dots {
   position: absolute;
-  bottom: -30px;
+  bottom: 10px;
   list-style: none;
   display: block;
   text-align: center;
@@ -721,6 +759,7 @@ h3 {
           justify-content: space-between;
   padding-top: 100px;
   padding-left: 140px;
+  margin-left: 60px;
   width: 44%;
 }
 
@@ -748,7 +787,7 @@ h3 {
   background-color: #fff;
   height: 2px;
   margin-bottom: 21px;
-  max-width: 376px;
+  width: 376px;
 }
 
 .contacts__name {
@@ -813,7 +852,7 @@ h3 {
   background: transparent;
   border: 1px solid #fff;
   height: 66px;
-  width: 360px;
+  max-width: 60%;
   font-size: 25px;
   line-height: 25px;
   padding-left: 30px;
@@ -858,16 +897,8 @@ h3 {
 }
 
 @media (max-width: 1692px) {
-  .container {
-    max-width: 1380px;
-  }
-
   h2 {
     font-size: 76px;
-  }
-
-  .header__middle {
-    margin-left: 1034px;
   }
 
   .music__container h2 {
@@ -939,26 +970,18 @@ h3 {
     max-width: 980px;
   }
 
-  .form input {
-    width: 310px;
-  }
-
   .form button {
     width: 180px;
   }
 }
 
 @media (max-width: 1399.98px) {
-  .container {
-    max-width: 1140px;
-  }
-
-  .header__middle {
-    margin-left: 800px;
-  }
-
   .music__container {
     padding-top: 120px;
+  }
+
+  .music__container h2 {
+    position: static;
   }
 
   .music__inner {
@@ -1019,29 +1042,41 @@ h3 {
     margin-right: 40px;
   }
 
+  .contacts {
+    padding: 0;
+    background-image: url("../images/contacts-1373.png");
+    background-repeat: no-repeat;
+    background-position: 50% 440px;
+    min-height: 2000px;
+  }
+
   .contacts__text {
-    padding-left: 60px;
-    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .contacts__text h2::before {
     left: -100px;
   }
 
+  .contacts__image {
+    display: none;
+  }
+
   .contacts__management {
     margin-bottom: 10px;
   }
 
-  .contacts__form {
-    position: absolute;
-    bottom: 30px;
-    left: -340px;
+  .contacts__name {
+    margin-bottom: 40px;
   }
 
   .contacts__footer {
-    position: absolute;
-    bottom: 30px;
-    left: -280px;
+    padding-top: 1040px;
   }
 
   .contacts__footer-corywright {
@@ -1052,32 +1087,34 @@ h3 {
     margin: 0 20px;
   }
 
-  .contacts__socials {
-    position: absolute;
-    bottom: -35px;
-    right: 230px;
-  }
-
   .contacts__socials-item {
     margin: 0 20px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .container {
-    max-width: 860px;
+  .header__inner {
+    min-height: 160px;
   }
 
-  .header__middle {
-    margin-left: 525px;
+  .hero__links {
+    margin: 60px 0 0px;
   }
 
   .music__slider-slider .slick-list {
     max-width: 860px;
   }
 
+  .biography__inner h2 {
+    margin-top: 0;
+  }
+
+  .biography__inner h2::after {
+    padding-left: 40px;
+  }
+
   .biography__image-text {
-    left: 77px;
+    left: 150px;
   }
 
   .contacts__columns {
@@ -1098,8 +1135,6 @@ h3 {
   .contacts__text {
     padding: 0;
     width: 100%;
-    position: relative;
-    margin-bottom: -120px;
   }
 
   .contacts__name {
@@ -1111,56 +1146,439 @@ h3 {
   }
 
   .contacts__footer {
-    position: absolute;
-    bottom: -1030px;
-    left: 210px;
+    position: static;
   }
 
   .contacts__socials {
-    position: absolute;
-    bottom: -1100px;
-    left: 80px;
+    position: static;
   }
 
-  .form input {
-    width: 400px;
+  .form {
+    text-align: center;
   }
 }
 
 @media (max-width: 991.98px) {
-  .container {
-    max-width: 740px;
-  }
-
-  .header__middle {
-    margin-left: 400px;
-  }
-
   .music__slider-slider .slick-list {
     max-width: 700px;
   }
 
   .contacts {
-    padding: 0;
-  }
-
-  .contacts__image {
-    max-height: 1100px;
-  }
-
-  .contacts__image img {
-    width: 100%;
+    background-image: url("../images/contacts-790.png");
+    background-position: 50% 500px;
+    min-height: 1600px;
   }
 
   .contacts__footer {
+    padding-top: 740px;
+  }
+}
+
+@media (max-width: 780px) {
+  h2 {
+    font-size: 54px;
+  }
+
+  .header__inner {
+    min-height: 160px;
+  }
+
+  .header__middle {
+    bottom: 65px;
+  }
+
+  .hero__socials {
+    margin: 0;
+  }
+
+  .hero__socials-item {
+    margin-bottom: 16px;
+  }
+
+  .music__container {
+    padding-top: 0px;
+  }
+
+  .music__container h2 {
+    font-size: 54px;
+    left: 40px;
+  }
+
+  .music__container h2::after {
+    padding-left: 56px;
+  }
+
+  .music__header-flipping span {
+    padding-left: 130px;
+  }
+
+  .music__slider-slider .slick-list {
+    max-width: 600px;
+  }
+
+  .biography__inner h2 {
+    margin-top: 0;
+  }
+
+  .biography__image img {
+    max-width: 500px;
+  }
+
+  .biography__image-text {
+    font-size: 54px;
+    top: 10px;
+    left: 110px;
+  }
+
+  .buttons__socials {
+    display: none;
+  }
+
+  .contacts__text h2::before {
+    display: none;
+  }
+
+  .contacts__socials-item {
+    margin: 0 12px;
+  }
+
+  .contacts__socials-item img {
+    max-width: 33px;
+  }
+
+  .contacts__socials-item:nth-child(5) {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  h3 {
+    font-size: 23px;
+    line-height: 28px;
+    padding-top: 10px;
+  }
+
+  .wrapper {
+    background-image: url(../images/mobile-bg.jpg);
+    background-position: 50% 0px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .header__inner {
+    min-height: 68px;
+  }
+
+  .header__middle {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 3%;
+  }
+
+  .hero__socials {
+    padding: 0;
+  }
+
+  .hero__socials-item {
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .hero__socials-item img {
+    max-width: 20px;
+  }
+
+  .hero__socials-item:nth-child(5) {
+    padding-top: 5px;
+  }
+
+  .hero__links {
+    margin: 28px 0 20px;
+  }
+
+  .music {
+    padding-top: 0;
+  }
+
+  .music__container h2 {
+    font-size: 30px;
+    line-height: 37px;
+    position: static;
+  }
+
+  .music__header {
+    margin: 0;
+  }
+
+  .music__header-track {
+    padding: 0;
+  }
+
+  .music__header-name {
+    font-size: 7px;
+    line-height: 9px;
+    text-align: center;
+  }
+
+  .music__header-flipping span {
+    font-size: 5px;
+    line-height: 6px;
+    color: #5C7790;
+    padding-top: 4px;
+    padding-left: 66px;
+    margin: 0 60px;
+  }
+
+  .music__header-flipping div {
+    margin-top: 3px;
+  }
+
+  .music__slider {
+    padding-top: 10px;
+  }
+
+  .music__slider-slider .slick-list {
+    max-width: 370px;
+  }
+
+  .biography__inner h2 {
+    margin-bottom: 54px;
+  }
+
+  .biography__image img {
+    max-width: 356px;
+  }
+
+  .biography__text {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .biography__text #more {
+    display: none;
+  }
+
+  .biography__text #btn {
+    display: inline-block;
+  }
+
+  .biography__text #dots {
+    display: inline-block;
+  }
+
+  .biography__text-more {
+    display: inline-block;
+    padding: 10px 0 10px;
+    background: transparent;
+    text-decoration: underline;
+  }
+
+  .biography__text p {
+    padding-bottom: 0;
+  }
+
+  .biography__text-line {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+    height: 1px;
+    margin: 20px 0 20px;
+  }
+
+  .biography__image-slider .slick-dots {
+    display: none !important;
+  }
+
+  .biography__image-text {
+    font-size: 37px;
+    line-height: 45px;
+    left: 20px;
+  }
+
+  .biography .buttons {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .biography .buttons__more a {
+    padding: 15px 90px 15px 30px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .biography .buttons__more a::after {
+    top: 18px;
+    left: 140px;
+  }
+
+  .form input {
+    height: 44px;
+    max-width: 199px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .form button {
+    height: 44px;
+    max-width: 118px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .contacts {
+    background-image: url("../images/contacts-mobile.png");
+    background-position: 50% 420px;
+    min-height: 1100px;
+  }
+
+  .contacts__text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+  }
+
+  .contacts__text p {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .contacts__text::before {
+    content: "SAINTY";
     position: absolute;
-    bottom: -830px;
-    left: 176px;
+    font-size: 128px;
+    line-height: 156px;
+    color: #fff;
+    font-weight: 100;
+    font-style: italic;
+    opacity: 44%;
+    top: 0;
+    left: 20px;
+    z-index: 0;
+  }
+
+  .contacts__management {
+    z-index: 1;
+  }
+
+  .contacts__name {
+    font-size: 25px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__name a {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .contacts__line {
+    width: 322px;
+  }
+
+  .contacts__footer {
+    padding-top: 420px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+
+  .contacts__footer-corywright {
+    display: none;
+  }
+
+  .contacts__footer-policy {
+    margin: 0;
+    width: 340px;
+    position: absolute;
+    bottom: -100px;
+    left: 20px;
   }
 
   .contacts__socials {
-    position: absolute;
-    bottom: -900px;
-    left: 50px;
+    margin-left: 20px;
+  }
+
+  form__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .music__slider-slider .slick-list {
+    max-width: 320px;
+  }
+
+  .biography__image img {
+    max-width: 310px;
+  }
+
+  .contacts__footer-policy {
+    left: 0px;
+  }
+
+  .contacts__socials {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 359px) {
+  .music__slider-slider .slick-list {
+    max-width: 300px;
+  }
+
+  .biography__image img {
+    max-width: 280px;
+  }
+
+  .contacts {
+    background-position: 50% 660px;
+  }
+
+  .contacts__line {
+    width: 280px;
+  }
+
+  .contacts__footer {
+    padding-top: 470px;
+  }
+
+  .contacts__footer-policy {
+    bottom: -94px;
+    left: -24px;
+  }
+
+  .contacts__socials {
+    margin-bottom: 60px;
+  }
+
+  .contacts__socials-item {
+    margin: 0 8px;
   }
 }

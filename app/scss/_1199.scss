@@ -1,8 +1,5 @@
-@media (max-width: 1199px) {
+@media (max-width: 1199.98px) {
 
-    h2::before, h2::after {
-        display: none;
-    }
 
     .container {
         max-width: 860px;
@@ -69,7 +66,6 @@
         }
 
         &__footer {
-            position: static;
             position: absolute;
             bottom: -1030px;
             left: 210px;

@@ -1,0 +1,42 @@
+@media (max-width: 991.98px) { 
+    .container {
+        max-width: 740px;
+    }
+
+    .header {
+        &__middle {
+            margin-left: 400px;
+        }
+    }
+
+    .music {
+        &__slider-slider {
+    
+            .slick-list {
+                max-width: 700px;
+            }
+        }
+    }
+
+    .contacts {
+        padding: 0;
+        &__image {
+            max-height: 1100px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__footer {
+            position: absolute;
+            bottom: -830px;
+            left: 176px;
+        }
+
+        &__socials {
+            position: absolute;
+            bottom: -900px;
+            left: 50px;
+        }
+    }
+ }

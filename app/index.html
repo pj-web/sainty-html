@@ -11,9 +11,9 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__inner">
+                <div class="header__inner anim-items anim-hide">
                     <div class="header__left">
-                        <a href="#">МУЗЫКА</a>
+                        <a class="menu__link" data-goto=".page__section-1" href="#">МУЗЫКА</a>
                     </div>
                     <div class="header__middle">
                         <div class="header__lang">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="header__right">
-                        <a href="#">ВИДЕО</a>
+                        <a class="menu__link" data-goto=".page__section-1" href="#">ВИДЕО</a>
                     </div>
                 </div>
             </div>
@@ -43,42 +43,42 @@
                 <div class="container">
                     <div class="hero__inner">
                         <div class="hero__socials">
-                            <div class="hero__socials-item">
+                            <div class="hero__socials-item anim-items anim-hide">
                                 <a href=""><img src="images/vk.svg" alt=""></a>
                             </div>
-                            <div class="hero__socials-item">
+                            <div class="hero__socials-item anim-items anim-hide">
                                 <a href="#"><img src="images/facebook.svg" alt=""></a>
                             </div>
-                            <div class="hero__socials-item">
+                            <div class="hero__socials-item anim-items anim-hide">
                                 <a href="#"><img src="images/instagram.svg" alt=""></a>
                             </div>
-                            <div class="hero__socials-item">
+                            <div class="hero__socials-item anim-items anim-hide">
                                 <a href="#"><img src="images/telegram.svg" alt=""></a>
                             </div>
-                            <div class="hero__socials-item">
+                            <div class="hero__socials-item anim-items anim-hide">
                                 <a href="https://www.youtube.com/channel/UCIp7iBsImcNMhi7e8CZpp3A"><img src="images/youtube.svg" alt=""></a>
                             </div>
-                            <div class="hero__socials-item">
+                            <div class="hero__socials-item anim-items anim-hide">
                                 <a href="#"><img src="images/tiktok.svg" alt=""></a>
                             </div>
                         </div>
-                        <div class="hero__links">
+                        <div class="hero__links anim-items anim-hide">
                             <div class="hero__links-bio">
-                                <a href="#">биография</a>
+                                <a class="menu__link" data-goto=".page__section-2" href="#">биография</a>
                             </div>
                             <div class="hero__links-conacts">
-                                <a href="#">контакты</a>
+                                <a class="menu__link" data-goto=".page__section-3" href="#">контакты</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="music">
+            <section class="music page__section-1">
                 <div class="music__container container">
-                    <h2>Музыка</h2>
+                    <h2 class="anim-items anim-hide">Музыка</h2>
                     <div class="music__inner">
                         
-                        <div class="music__header">
+                        <div class="music__header anim-items anim-hide">
                             
                             <div class="music__header-track">
                                 <div class="music__header-name">
@@ -124,22 +124,22 @@
                     </div>
                 </div>
             </section>
-            <section class="biography">
+            <section class="biography page__section-2">
                 <div class="container">
                     <div class="biography__inner">
-                        <h2>Биография</h2>
+                        <h2 class="anim-items anim-hide">Биография</h2>
                         <div class="biography__columns">
                             <div class="biography__text">
-                                <h3>Начало карьеры</h3>
-                                <p>Sainty - молодой артист из г. Новосибирск. Автор и исполнитель собственных песен. Каждая его песня, это как новая глава, которая повествует слушателю о невероятных и незабываемых, любовных <span id="dots"> ... </span> <span id="more">историях. Строчки, одна за другой, переплетаются между собой, передавая все чувства, эмоции сказочных отношений двух лирических героев. За столь короткое время, Sainty, уже выступал на Первом Международном Фестивале ЖАРА KIDS FEST 2021, впервые презентовал на канале Music Box: «МузКач» лирический трек «5 минут». Находился в плейлисте «Русские хиты» ВК/BOOM. Давал интервью каналу Music Box и радио «Чай с Кальяном» (их можно посмотреть на YouTube канале “Sainty”)</span></p>
+                                <h3 class="anim-items anim-hide">Начало карьеры</h3>
+                                <p class="anim-items anim-hide">Sainty - молодой артист из г. Новосибирск. Автор и исполнитель собственных песен. Каждая его песня, это как новая глава, которая повествует слушателю о невероятных и незабываемых, любовных <span id="dots"> ... </span> <span id="more">историях. Строчки, одна за другой, переплетаются между собой, передавая все чувства, эмоции сказочных отношений двух лирических героев. За столь короткое время, Sainty, уже выступал на Первом Международном Фестивале ЖАРА KIDS FEST 2021, впервые презентовал на канале Music Box: «МузКач» лирический трек «5 минут». Находился в плейлисте «Русские хиты» ВК/BOOM. Давал интервью каналу Music Box и радио «Чай с Кальяном» (их можно посмотреть на YouTube канале “Sainty”)</span></p>
                                 <button class="biography__text-more" id="btn" onclick="readMore()">Подробнее</button>
-                                <h3>про музыку</h3>
-                                <p>родился в большой семье в Таганроге. Его отец, Павел Егорович, сначала гонял продавать быков из Воронежской губернии в Москву, а в 1858 году стал купцом третьей гильдии. В браке с Евгенией Морозовой у них родилось шестеро детей, сам Антон был третьим.</p>
-                                <h3>кто я</h3>
-                                <p>родился в большой семье в Таганроге. Его отец, Павел Егорович, сначала гонял продавать быков из Воронежской губернии в Москву, а в 1858 году стал купцом третьей гильдии. В браке с Евгенией Морозовой у них родилось шестеро детей, сам Антон был третьим.
+                                <h3 class="anim-items anim-hide">про музыку</h3>
+                                <p class="anim-items anim-hide">родился в большой семье в Таганроге. Его отец, Павел Егорович, сначала гонял продавать быков из Воронежской губернии в Москву, а в 1858 году стал купцом третьей гильдии. В браке с Евгенией Морозовой у них родилось шестеро детей, сам Антон был третьим.</p>
+                                <h3 class="anim-items anim-hide">кто я</h3>
+                                <p class="anim-items anim-hide">родился в большой семье в Таганроге. Его отец, Павел Егорович, сначала гонял продавать быков из Воронежской губернии в Москву, а в 1858 году стал купцом третьей гильдии. В браке с Евгенией Морозовой у них родилось шестеро детей, сам Антон был третьим.
                                 </p>
-                                <div class="biography__text-line"></div>
-                                <div class="biography__text-buttons buttons">
+                                <div class="biography__text-line anim-items anim-hide"></div>
+                                <div class="biography__text-buttons buttons anim-items anim-hide">
                                     <div class="buttons__socials">
                                         <div class="buttons__socials-item">
                                             <a href=""><img src="images/vk.svg" alt=""></a>
@@ -160,7 +160,7 @@
                                             <a href="#"><img src="images/tiktok.svg" alt=""></a>
                                         </div>
                                     </div>
-                                    <div class="buttons__more">
+                                    <div class="buttons__more anim-items anim-hide">
                                         <a href="#">ПОДРОБНЕЕ</a>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts page__section-3">
                 <div class="container">
                     <div class="contacts__inner">
                         <div class="contacts__columns">
@@ -188,23 +188,23 @@
                                 <img src="images/contacts.png" alt="">
                             </div>
                             <div class="contacts__text">
-                                <h2>Контакты</h2>
+                                <h2 class="anim-items anim-hide">Контакты</h2>
                                 <div class="contacts__management">
-                                    <p>PR/MEDIA</p>
-                                    <p>ОРГАНИЗАЦИЯ КОНЦЕРТОВ</p>
-                                    <p>ОБЩИЕ ВОПРОСЫ / ДЕМО</p>
+                                    <p class="anim-items anim-hide">PR/MEDIA</p>
+                                    <p class="anim-items anim-hide">ОРГАНИЗАЦИЯ КОНЦЕРТОВ</p>
+                                    <p class="anim-items anim-hide">ОБЩИЕ ВОПРОСЫ / ДЕМО</p>
                                 </div>
-                                <div class="contacts__line"></div>
-                                <div class="contacts__name"><a href="tel:+79534526316">+7 953 452-63-16</a> Ирина</div>
-                                <div class="contacts__form form">
+                                <div class="contacts__line anim-items anim-hide"></div>
+                                <div class="contacts__name anim-items anim-hide"><a href="tel:+79534526316">+7 953 452-63-16</a> Ирина</div>
+                                <div class="contacts__form form anim-items anim-hide">
                                     <form class="form__body" action="#">
-                                        <h3 class="form__title">Отправь свой e-mail и получай
+                                        <h3 class="form__title anim-items anim-hide">Отправь свой e-mail и получай
                                             самые свежие новости!</h3>
                                         <input  class="form__input" type="text" name="email" placeholder="e-mail" autocomplete="off" required="" minlength="7">
                                         <button type="submit">Подробнее</button>
                                     </form>
                                 </div>
-                                <div class="contacts__footer">
+                                <div class="contacts__footer anim-items anim-hide">
                                     <div class="contacts__footer-corywright">
                                         © 2021, Sainty develoment
                                     </div>
@@ -212,7 +212,7 @@
                                         <a href="#">Политика конфиденциальности</a>
                                     </div>
                                 </div>
-                                <div class="contacts__socials">
+                                <div class="contacts__socials anim-items anim-hide">
                                     <div class="contacts__socials-item">
                                         <a href="#"><img src="images/vk-b.svg" alt=""></a>
                                     </div>

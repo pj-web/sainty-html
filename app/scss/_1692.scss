@@ -30,6 +30,11 @@
 
         &__inner {
             padding-bottom: 0;
+            h2 {
+                &::after {
+                    padding-left: 50px;
+                }
+            }
         }
 
         &__text {

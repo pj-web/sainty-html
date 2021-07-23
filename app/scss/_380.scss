@@ -1,5 +1,10 @@
 @media (max-width: 380px) {
     .music {
+        &__header-flipping {
+            span {
+                padding-left: 40px;
+            }
+        }
         &__slider-slider {
     
             .slick-list {
